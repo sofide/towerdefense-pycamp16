@@ -188,7 +188,7 @@ class PechoFrio(CamperDoble):
 	#To nerf this tower you can change everything, but keeping the idea that it
 	#is just a stun tower
     def _damage(self, monster):
-        monster.affect(damage=self.strength, freeze=2)
+        monster.affect(damage=self.strength, freeze=3)
 
 
 class Patovica(Bully):
