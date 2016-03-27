@@ -182,13 +182,13 @@ class MiniGun(Tower):
 
 
 class PechoFrio(CamperDoble):
-    def __init__(self, position, shooting_range=1000, strength=30, cooldown=3):
+    def __init__(self, position, shooting_range=1000, strength=30, cooldown=4):
         super().__init__(position, shooting_range=shooting_range,
                          strength=strength, cooldown=cooldown)
 	#To nerf this tower you can change everything, but keeping the idea that it
 	#is just a stun tower
     def _damage(self, monster):
-        monster.affect(damage=self.strength, freeze=5)
+        monster.affect(damage=self.strength, freeze=2)
 
 
 class Patovica(Bully):
